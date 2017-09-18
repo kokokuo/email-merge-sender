@@ -1,15 +1,6 @@
-###VSCode###
-.vscode/*
-
-###Redis####
-.rdb
-
 ###MacFile###
 .DS_Store
-
-###Logs###
-logs
-
+api/local.py
 ###Project###
 ##Migraions file###
 migrations
@@ -91,6 +82,7 @@ target/
 
 # sftp configuration file
 sftp-config.json
+
 
 # Elastic Beanstalk Files
 .elasticbeanstalk/*
