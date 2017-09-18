@@ -1,0 +1,65 @@
+h1, h2, h3, p {
+	font-family: 'Roboto', "Microsoft JhengHei", "微軟正黑體", "Microsoft YaHei", "微软雅黑","新細明體", Arial, sans-serif;
+}
+
+body {
+	background-color: #f8fdff;
+}
+
+.page-wide {
+	padding: 0px !important;
+}
+
+.header {
+	margin-top: 40px;
+	margin-bottom: 40px;
+	padding-top: 5%;
+}
+
+/* 每一個內容的區塊 */
+.section {
+	padding-left: 10%;
+	padding-right: 10%;
+}
+.page-title {
+	padding-bottom: 9px;
+	margin-bottom: 40px;
+    border-bottom: 1px solid #eee;
+}
+
+.process {
+	margin-top: 10px;
+}
+.proc-colorful {
+	background-color: #5e9b8c;
+}
+
+	/* background-color: #5e9b8c; */
+	/* background-color: #f9f9f9; */
+
+
+/* 
+.process {
+	margin-top: 20px;
+	margin-bottom: 20px;
+} */
+
+.proc-title {
+	margin-top: 5px;
+	margin-bottom: 5px;
+	border-bottom: 1px solid #ccc;
+}
+
+/* #9B8E7E */
+.content-tight {
+	padding-bottom: 2px;
+	padding-top: 2px;
+	padding-right: 5%;
+    padding-left: 5%;
+}
+#contentarea {
+	border: 1px solid #ccc;
+	overflow-y: scroll;
+	height: 300px;
+	min-height: 120%;
+}

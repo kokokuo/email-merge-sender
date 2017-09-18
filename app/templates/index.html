@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Naomi 專用自動化信件寄送網頁</title>
+	<link rel="stylesheet" href="{{ url_for('static', filename='dist/css/bootstrap.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='dist/css/bootstrap-theme.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/sticky-footer-navbar.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/base.css') }}">
+	
+</head>
+
+<body>
+    <!-- 上條的 Fixed navbar -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container-fluid">
+		<div class="content-tight">
+			<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="#">選單</a>
+			</div>
+			<div id="navbar" class="collapse navbar-collapse">
+			<ul class="nav navbar-nav">
+				<!-- <li class="active"><a href="#">Home</a></li> -->
+				<li><a href="#about">尚未開放哦！</a></li>
+				<!-- <li><a href="#contact">Contact</a></li>
+				<li class="dropdown">
+				<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+				<ul class="dropdown-menu">
+					<li><a href="#">Action</a></li>
+					<li><a href="#">Another action</a></li>
+					<li><a href="#">Something else here</a></li>
+					<li role="separator" class="divider"></li>
+					<li class="dropdown-header">Nav header</li>
+					<li><a href="#">Separated link</a></li>
+					<li><a href="#">One more separated link</a></li>
+				</ul>
+				</li> -->
+			</ul>
+			</div><!--/.nav-collapse -->
+		</div>
+      </div>
+    </nav>
+
+    <!-- 內容頁 -->
+    <div class="container-fluid page-wide">
+		<div class="header section">
+			<div class="page-title">
+					<h1>Naomi 自動化工作網頁</h1>
+			</div>
+			<p class="lead" style="margin-bottom:10px">此網頁會替換制式信件格式中的旅宿資料，並且自動寄出，分為三步驟：</p>
+			<ol style=" font-size:18px;">
+				<li>複製並貼上信件內容，選擇要 表格 Excel 中欄位要對應的名稱</li>
+				<li>匯入 Excel 表格，並勾選要填入到信件中的欄位</li>
+				<li>勾選要「一封封檢查寄送」，還是「不管他直接寄送」，並按下「去吧！」開始寄送</li>
+			</ol>
+		</div>
+		
+		<!-- 分成三大區塊 (1.)匯入信件區 (2.)Excel 區塊 (3.)檢查與寄送區塊 -->
+		<div class="process">
+			<div id="mail-proc" class="proc-colorful">
+				<div class="section">
+					
+				</div>
+				<div class="row">
+					<div class="col-md-6 section">
+						<div class="proc-title">
+							<h3>1.複製內容，貼上</h3>
+						</div>
+						<p> 請複製你的信件內容並複製到下方：</p>
+					
+						
+						<div id="contentarea" contenteditable="true">
+
+						</div>
+						
+					</div>
+					<div class="col-md-4">
+						樣式區塊檢測 -2
+					</div>
+					<div>
+
+					</div>
+				</div>
+			</div>
+			<div id="excel-proc"></div>
+			<div id="check-proc"></div>
+		</div>
+	  
+    </div>
+
+    <footer class="footer">
+      <div class="container">
+        <p class="text-muted">Powered by <a href="https://www.facebook.com/yicheng.kuo.9">Eason Kuo</a></p>
+      </div>
+    </footer>
+	<script src="{{ url_for('static', filename='js/jquery-1.12.1.min.js') }}"></script>
+	<script src="{{ url_for('static', filename='js/jquery-2.2.1.min.js') }}"></script>
+	<script src="{{ url_for('static', filename='dist/js/bootstrap.js') }}"></script>
+</html>
