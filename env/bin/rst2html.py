@@ -1,4 +1,4 @@
-#!/Users/koko/Documents/Python/sideproj/naomiwork_optimize/auto_mail_web/env/bin/python2.7
+#!/Users/koko/Documents/Python/sideproj/naomiwork_optimize/ausite-sendmail/env/bin/python2.7
 
 # $Id: rst2html.py 4564 2006-05-21 20:44:42Z wiemann $
 # Author: David Goodger <goodger@python.org>

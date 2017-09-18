@@ -1,4 +1,4 @@
-#!/Users/koko/Documents/Python/sideproj/naomiwork_optimize/auto_mail_web/env/bin/python2.7
+#!/Users/koko/Documents/Python/sideproj/naomiwork_optimize/ausite-sendmail/env/bin/python2.7
 
 # $Id: rst2odt.py 5839 2009-01-07 19:09:28Z dkuhlman $
 # Author: Dave Kuhlman <dkuhlman@rexx.com>

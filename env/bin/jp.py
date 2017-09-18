@@ -1,4 +1,4 @@
-#!/Users/koko/Documents/Python/sideproj/naomiwork_optimize/auto_mail_web/env/bin/python2.7
+#!/Users/koko/Documents/Python/sideproj/naomiwork_optimize/ausite-sendmail/env/bin/python2.7
 
 import sys
 import json

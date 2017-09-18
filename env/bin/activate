@@ -40,7 +40,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="/Users/koko/Documents/Python/sideproj/naomiwork_optimize/auto_mail_web/env"
+VIRTUAL_ENV="/Users/koko/Documents/Python/sideproj/naomiwork_optimize/ausite-sendmail/env"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"

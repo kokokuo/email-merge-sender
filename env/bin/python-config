@@ -1,4 +1,4 @@
-#!/Users/koko/Documents/Python/sideproj/naomiwork_optimize/auto_mail_web/env/bin/python
+#!/Users/koko/Documents/Python/sideproj/naomiwork_optimize/ausite-sendmail/env/bin/python
 
 import sys
 import getopt
