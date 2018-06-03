@@ -10,3 +10,8 @@ index_bp = Blueprint(
 @index_bp.route('/')
 def index():
 	return render_template('index.html')
+
+
+@index_bp.route('/template/mail/keypair')
+def mail_matched_template():
+	return render_template('matched.html')

@@ -1,9 +1,14 @@
 ###MacFile###
 .DS_Store
-api/local.py
+
 ###Project###
+api/local.py
+
 ##Migraions file###
-migrations
+migrations/
+
+###Logs###
+logs/
 
 ###Sublime###
 *.sublime-project

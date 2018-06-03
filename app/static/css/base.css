@@ -11,15 +11,21 @@ body {
 }
 
 .header {
-	margin-top: 40px;
-	margin-bottom: 40px;
-	padding-top: 5%;
+	margin-top: 60px;
+	margin-bottom: 20px;
+	/* padding-top: 5%; */
+}
+
+.bright {
+	color:white !important;
 }
 
 /* 每一個內容的區塊 */
 .section {
+	padding-top: 5%;
 	padding-left: 10%;
 	padding-right: 10%;
+	padding-bottom: 5%;
 }
 .page-title {
 	padding-bottom: 9px;
@@ -27,29 +33,33 @@ body {
     border-bottom: 1px solid #eee;
 }
 
+
 .process {
 	margin-top: 10px;
 }
-.proc-colorful {
+.birght-green-bk {
 	background-color: #5e9b8c;
 }
 
-	/* background-color: #5e9b8c; */
-	/* background-color: #f9f9f9; */
 
-
-/* 
-.process {
-	margin-top: 20px;
-	margin-bottom: 20px;
-} */
+/* background-color: #5e9b8c; */
+/* background-color: #f9f9f9; */
 
 .proc-title {
-	margin-top: 5px;
-	margin-bottom: 5px;
-	border-bottom: 1px solid #ccc;
+	margin-top: 10px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 5px;
 }
 
+.process p {
+	font-size: 18px;
+	line-height: 150%;
+}
+
+.process li {
+	font-size: 16px;
+}
 /* #9B8E7E */
 .content-tight {
 	padding-bottom: 2px;
@@ -57,9 +67,32 @@ body {
 	padding-right: 5%;
     padding-left: 5%;
 }
+
+#subject-text {
+	border: 1px solid #ccc;
+	overflow-x: scroll;
+	color: black;
+	font-size: 16px;
+	height: 30px;
+	width: 80%;
+	margin-bottom: 25px;
+    background-color: white;
+}
 #contentarea {
 	border: 1px solid #ccc;
 	overflow-y: scroll;
-	height: 300px;
-	min-height: 120%;
+	color: black;
+	font-size: 16px;
+	height: 400px;
+    min-height: 120%;
+    background-color: white;
+}
+
+.step-intro {
+	margin-top: 10%;
+}
+
+.sample-img {
+	margin-top: 10%;
+	width: 100%;
 }

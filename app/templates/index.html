@@ -3,6 +3,8 @@
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Naomi 專用自動化信件寄送網頁</title>
+	<link rel="icon" href="{{ url_for('static', filename='img/send-email.ico') }}" type="image/x-icon" />
+	<link rel="Bookmark" href="{{ url_for('static', filename='img/send-email.ico') }}" type="image/x-icon" />
 	<link rel="stylesheet" href="{{ url_for('static', filename='dist/css/bootstrap.css') }}">
 	<link rel="stylesheet" href="{{ url_for('static', filename='dist/css/bootstrap-theme.css') }}">
 	<link rel="stylesheet" href="{{ url_for('static', filename='css/sticky-footer-navbar.css') }}">
@@ -52,6 +54,7 @@
 		<div class="header section">
 			<div class="page-title">
 					<h1>Naomi 自動化工作網頁</h1>
+					<!-- <img class='same-line' src="{{ url_for('static', filename='img/send-email.png') }}"> -->
 			</div>
 			<p class="lead" style="margin-bottom:10px">此網頁會替換制式信件格式中的旅宿資料，並且自動寄出，分為三步驟：</p>
 			<ol style=" font-size:18px;">
@@ -63,32 +66,61 @@
 		
 		<!-- 分成三大區塊 (1.)匯入信件區 (2.)Excel 區塊 (3.)檢查與寄送區塊 -->
 		<div class="process">
-			<div id="mail-proc" class="proc-colorful">
-				<div class="section">
-					
-				</div>
-				<div class="row">
-					<div class="col-md-6 section">
+			<div id="mail-proc" class="birght-green-bk">
+				<div class="row bright section">
+					<div class="col-md-7">
 						<div class="proc-title">
 							<h3>1.複製內容，貼上</h3>
 						</div>
-						<p> 請複製你的信件內容並複製到下方：</p>
-					
-						
+						<p style="margin-bottom:20px;"> 請複製你的信件內容並複製到下方：</p>
+						<!-- 貼上標題的位置 -->
+						<p>信件主旨：</p> 
+						<input type="text" name="subject-text" id="subject-text">
+						<!-- 貼上信件內容的位置 -->
+						<p>信件內容：</p> 
 						<div id="contentarea" contenteditable="true">
-
 						</div>
+					</div>
+					<div class="col-md-5">
+						<div class="step-intro">
+							<p>操作步驟：</p>
+							{% raw %}									
+							<p>把內容中，想要替換的部分，用 {{ 關鍵字 }} 取代，並在大括弧中定義想要的替換詞，其中關鍵字是可以自己定義與替換的（但需要文字不能特殊符號）。</p>
+							<p> e.g {{ 旅宿名稱 }} 、 {{ hotel_name }}</p>
+							{% endraw %}
+							<img class='sample-img' src="{{ url_for('static', filename='img/mail-sample.png') }}"/>
+						</div>
+						<!-- 顯示要替代的關鍵字 -->
+						<!-- <div class="step-intro">	
+							<div id="replace-keys"></div>
+						</div> -->
+					</div>
+					
+				</div>
+			</div>
+			<div id="sheet-proc">
+				<div class="row section">
+					<div class="col-md-7">
+						<div class="proc-title">
+							<h3>2.匯入 Excel 檔案</h3>
+						</div>
+						<form class="dropzone" id="sheetform">
+						</form>
 						
 					</div>
-					<div class="col-md-4">
-						樣式區塊檢測 -2
-					</div>
-					<div>
-
+					<div class="col-md-5">
+						<div class="step-intro">
+							<p>操作步驟：</p>
+							<p>信件中定義的關鍵 需與試算表中的第一列欄位 一致</p>
+							<img class='sample-img' src="{{ url_for('static', filename='img/excel-sample.png') }}"/>
+						</div>
+						<!-- 顯示要替代的關鍵字 -->
+						<!-- <div class="step-intro">	
+							<div id="replace-keys"></div>
+						</div> -->
 					</div>
 				</div>
 			</div>
-			<div id="excel-proc"></div>
 			<div id="check-proc"></div>
 		</div>
 	  
@@ -102,4 +134,5 @@
 	<script src="{{ url_for('static', filename='js/jquery-1.12.1.min.js') }}"></script>
 	<script src="{{ url_for('static', filename='js/jquery-2.2.1.min.js') }}"></script>
 	<script src="{{ url_for('static', filename='dist/js/bootstrap.js') }}"></script>
+	<script src="{{ url_for('static', filename='js/base.js') }}"></script>
 </html>
